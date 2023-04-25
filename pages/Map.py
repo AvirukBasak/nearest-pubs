@@ -5,8 +5,6 @@ from streamlit_folium import folium_static
 
 df = pd.read_csv('res/pubs_cleaned.csv')
 
-st.title('Map')
-
 postal_codes = df['postcode'].unique()
 local_authorities = df['local_authority'].unique()
 
