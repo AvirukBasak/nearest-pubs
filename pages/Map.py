@@ -25,8 +25,7 @@ def create_map(data):
     for index, row in data.iterrows():
         folium.Marker(
             location = [row['latitude'], row['longitude']],
-            popup = row['name'],
-            icon = folium.Icon(color='blue'),
+            popup = row['name']
         ).add_to(m)
     return m
 
